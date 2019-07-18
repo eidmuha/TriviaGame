@@ -1,4 +1,5 @@
 var q = ''
+var counter = 0;
 $( document ).ready(function() {
     // Handler for .ready() called.
    
@@ -10,7 +11,7 @@ $( document ).ready(function() {
         $(".table").removeClass("d-none")
     console.log("lsjdks")
 
-        displayQuestion()
+        display()
 
         animate()
     })
@@ -51,15 +52,33 @@ $("table").delegate("td", "click", function(){
       }, timeout);
   };
   
-
+var timeInterval;
 //   retrieving mcqs 
-function displayQuestion(){    
-    q = mcqs[0].q1;
-    $("#question").text(q)
-    $("#a").text(mcqs[0].a)
-    $("#b").text(mcqs[0].b)
-    $("#c").text(mcqs[0].c)
-    $("#d").text(mcqs[0].d)
+function display(){   
+    timeInterval=  setInterval(displayQuestion, 3000) 
+    
 
+}
+
+var q = '';
+function displayQuestion(){
+    // console.log("length:"+mcqs.length)
+    q = 'q' + counter;
+    if(counter>=mcqs.length){
+        clearInterval(timeInterval)
+    }else{   
+
+        console.log("Check: "+q)
+        // console.log("counter: "+counter)
+        // console.log("temp: "+q)
+        qustion = mcqs[counter].q;
+        console.log("question:"+qustion)
+        $("#question").text(qustion)
+        $("#a").html("<li>"+mcqs[counter].a+"</li>")
+        $("#b").html("<li>"+mcqs[counter].b+"</li>")
+        $("#c").html("<li>"+mcqs[counter].c+"</li>")
+        $("#d").html("<li>"+mcqs[counter].d+"</li>")
+        counter++;
+    }
 }
 
