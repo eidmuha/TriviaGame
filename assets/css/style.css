@@ -1,3 +1,13 @@
+
+
+.pad {
+  padding: 15px;
+}
+
+.alert {
+  display: none;
+}
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -41,4 +51,10 @@
     .img-responsive {
       min-width: 10%;
     }
+}
+
+
+
+.table tr {
+  cursor: pointer;
 }
