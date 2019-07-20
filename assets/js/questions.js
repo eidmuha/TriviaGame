@@ -1,5 +1,5 @@
 var mcqs = [{
-    q0: "Which of the following is the capital of the Northern Territory?",
+    q: "Which of the following is the capital of the Northern Territory?",
     a: "Sydney",
     b: "Canberra",
     c: "Darwin",
@@ -9,7 +9,7 @@ var mcqs = [{
     }
 },
 {
-    q1: "What do we celebrate on ANZAC Day?",
+    q: "What do we celebrate on ANZAC Day?",
     a: "The landing of the first free settlers from Europe",
     b: "The landing of the First Fleet at Sydney Cove",
     c: "The landing of the first settlers from Asia at Gallipoli",
@@ -20,7 +20,7 @@ var mcqs = [{
     }
 },
 {
-    q2: "Australians are free to follow any belief of their choosing:",
+    q: "Australians are free to follow any belief of their choosing:",
     a: "Unconditionally",
     b: "Only if their belief is approved by the police",
     c: "Only if they do not break the law",
@@ -30,7 +30,7 @@ var mcqs = [{
     }
 },
 {
-    q3: "How was Australia organized before 1901?",
+    q: "How was Australia organized before 1901?",
     a: "By 6 self-governing Aboriginal groups",
     b: "By 6 self-governing British colonies",
     c: "By 6 British colonies that governed each other",

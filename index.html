@@ -28,7 +28,7 @@
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
       <div class="inner">
-        <h3 class="masthead-brand">My way</h3>
+        <h3 class="masthead-brand">AU Citizenship</h3>
         <nav class="nav nav-masthead justify-content-center">
           <a class="nav-link active" href="#">Home</a>
           <a class="nav-link" href="#">Features</a>
@@ -40,18 +40,24 @@
 
 
 
-    <div class="container border ">
+    <div class="container h-300">
 
-        <progress class="progress invisible w-100" value="0" max="10" >0%</progress>
-        <div class="alert h-50">Time Out!</div>
-        <!-- <div id="timeOutMesage"></div> -->
-
+      <div class="text-center invisible" id="timerUI">00</div>
+  
         <div class="row">
-          <div class="col-4">
-            
-          </div>
+          <div class="col-4 h-200" >
+            <img id="resultImage" src="https://media0.giphy.com/media/xUPGcJYhYHA3IrAO1G/200w.webp?cid=790b76115d32ec592e7039444510d8f1&rid=200w.webp" height="300px" width="300px" class="img-thumbnail bg-transparent d-none">
 
+          </div>
+          
           <div class="col-8" id="qAndAns">
+
+              <div class="card d-none myclass text-dark">
+                  <div class="card-header">
+                    Results
+                  </div>
+                  <div class="text-right pr-5" id="scoreResults"></div>
+                </div>
 
               <table class="table table-hover table-sm d-none bg-white text-left">
                   <thead>
@@ -78,7 +84,7 @@
             
           </div>
         </div>
-
+      
       <main role="main" class="inner cover">
         <p class="lead">
           <img id="aumap" class="img-fluid bg-transparent img-responsive border-0"
@@ -86,9 +92,9 @@
         </p>
       </main>
 
-
-      <div class="row border">
-        <div class="col-4 border">
+<hr>
+      <div class="row">
+        <div class="col-4">
           <button id="restart" type="button" class="btn btn-info invisible">Restart</button>
         </div>
         <div class="col-8">
